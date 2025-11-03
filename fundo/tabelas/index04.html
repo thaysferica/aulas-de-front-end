@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif ;
+    }
+    th, td{
+        padding: 10px;
+        border: solid grey 1px;
+    }
+    table{
+         border-collapse: collapse;
+
+    }
+    caption{
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+</style>
+<body>
+    <h1>Exercicios de tabela</h1>
+    <table>
+        <caption>
+            filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">grupos</th>
+                <th scope="col">nomes</th>
+                <th colspan="3" scope="colgroup">filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Thaynara</td>
+                <td>diário de uma paixão</td>
+                <td>brilho eterno de uma mente sem memórias</td>
+                <td>rambo</td>
+            </tr>
+            <tr>
+                <td>Isabella</td>
+                <td>sociedade dos poetas mortos</td>
+                <td>as vanstagens de ser invísivel</td>
+                <td>hulk</td>
+            </tr>
+            <tr>
+                <td>Kamily</td>
+                <td>star wars episódio 3</td>
+                <td>matrix</td>
+                <td>de volta para o futuro</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Kleber</td>
+                <td>John wick</td>
+                <td>rock</td>
+                <td>até o último homem</td>
+            </tr>
+            <tr>
+                <td>Daniel C</td>
+                <td>mercenários</td>
+                <td>interestelar</td>
+                <td>need for speed</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>a hora da estrela</td>
+                <td>sem coração</td>
+                <td>bastardos inglórios</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
